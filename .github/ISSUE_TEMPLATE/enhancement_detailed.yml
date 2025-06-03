@@ -3,7 +3,6 @@ description: >
   Request a new feature or additional functionality while providing context,
   ideas, and requirements for completion.
 labels: [ "enhancement", "triage" ]
-type: "Feature"
 body:
   - type: textarea
     id: goal
@@ -29,7 +28,7 @@ body:
         Provide a description of your initial thoughts/challenges related to the
         implementation of the new functionality; include a short statement
         specifying if it relates to a system requirement as necessary.
-    verifications:
+    validations:
       required: true
   - type: dropdown
     id: affected-areas
@@ -51,6 +50,7 @@ body:
   - type: textarea
     id: deliverables
     attributes:
+      label: Deliverables
       description: >
         What are the criteria for this work to be considered "complete"? Do any
         artifacts (design documents, data, research notes, etc.) need to be

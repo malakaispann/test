@@ -1,7 +1,6 @@
 name: Enhancement (Simple)
 description: Request a new feature or additional functionality.
 labels: [ "enhancement", "triage" ]
-type: "Feature"
 body:
   - type: textarea
     id: proposal

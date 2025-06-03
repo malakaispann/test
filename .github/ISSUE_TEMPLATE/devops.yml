@@ -1,7 +1,6 @@
 name: Developer Operations
 description: Propose a "nice-to-have" for the development team.
 labels: [ "devops", "triage" ]
-type: "Task"
 body:
   - type: textarea
     id: proposal
