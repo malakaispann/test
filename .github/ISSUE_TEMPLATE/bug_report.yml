@@ -1,0 +1,36 @@
+name: Bug Report
+description: Report something that isn't working as expected.
+labels: [ "bug", "triage" ]
+type: "Bug"
+assignees: [ "enriquecaballero" ]
+body:
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: What's currently happening.
+      placeholder: >
+        `/sources/{id}` always returns a 500 status error with the
+        description  "server encountered unexpected error"
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: The exact steps you took when this behavior occurred.
+      placeholder: |
+        1. Upload <attached file> using `/sources` with OpenAPI Page.
+        2. Copy ID (XXX) from returned message.
+        3. Paste into (XXX) field in `/sources/{id}` and press execute
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: >
+        Please provide any additional information about the bug or potential
+        solutions.
+    validations:
+      required: false

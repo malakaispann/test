@@ -1,0 +1,57 @@
+name: Enhancement (Detailed)
+description: >
+  Request a new feature or additional functionality while providing context,
+  ideas, and requirements for completion.
+labels: [ "enhancement", "triage" ]
+type: "Feature"
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What is the goal of this work functionality.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: >
+        Describe a current problem (& example use-cases) this enhancement would
+        fix/mitigate.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-direction
+    attributes:
+      label: Proposed Direction
+      description: >
+        Provide a description of your initial thoughts/challenges related to the
+        implementation of the new functionality; include a short statement
+        specifying if it relates to a system requirement as necessary.
+    verifications:
+      required: true
+  - type: dropdown
+    id: affected-areas
+    attributes:
+      label: Affected Areas
+      description: >
+        What core areas of the application will the will this new functionality
+        affect.
+      options:
+        - Input Validation
+        - Internal Communication (i.e. "event" messaging & handling)
+        - Task Scheduling
+        - Data Storage/Retrieval
+        - Configuration
+        - API
+      multiple: true
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      description: >
+        What are the criteria for this work to be considered "complete"? Do any
+        artifacts (design documents, data, research notes, etc.) need to be
+        generated?

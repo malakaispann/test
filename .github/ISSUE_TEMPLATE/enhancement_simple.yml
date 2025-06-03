@@ -1,0 +1,31 @@
+name: Enhancement (Simple)
+description: Request a new feature or additional functionality.
+labels: [ "enhancement", "triage" ]
+type: "Feature"
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What functionality should be added.
+      placeholder: >
+        Add the ability to make HTTP post calls with a customizable request body.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: >
+        Describe how the functionality will be used and why it should be added.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: >
+        Please provide any additional ideas related to the implementation of the
+        new functionality.
+    validations:
+      required: false

@@ -1,0 +1,26 @@
+name: Developer Operations
+description: Propose a "nice-to-have" for the development team.
+labels: [ "devops", "triage" ]
+type: "Task"
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: >
+        What do you think would help the dev team in their day-to-day process
+        and why?
+    validations:
+      required: true
+  - type: dropdown
+    id: cross-organization-assistance
+    attributes:
+      label: Cross Organization Assistance
+      description: >
+        Does this require assistance / approval from any of the groups below?
+      options:
+        - Management
+        - Cloud Practice
+        - IT
+    validations:
+      required: false
